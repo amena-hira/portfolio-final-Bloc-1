@@ -1,3 +1,11 @@
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  preloader.classList.add("hidden");
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 500);
+});
+
 // -----------------Responsive Toggle Menu---------------------
 const sidebar = document.getElementById("sidebar");
 const hamburger = document.getElementById("hamburgerBtn");
@@ -105,24 +113,24 @@ buttons.forEach((button) => {
 });
 
 // --------------------filter skills-----------------
-const skillTags = document.querySelectorAll('.skills-tags .tag');
-  const skillIcons = document.querySelectorAll('.skills-icons img');
+const skillTags = document.querySelectorAll(".skills-tags .tag");
+const skillIcons = document.querySelectorAll(".skills-icons img");
 
-  skillTags.forEach(tag => {
-    tag.addEventListener('click', () => {
-      // Update active class
-      document.querySelector('.tag.active')?.classList.remove('active');
-      tag.classList.add('active');
+skillTags.forEach((tag) => {
+  tag.addEventListener("click", () => {
+    // Update active class
+    document.querySelector(".tag.active")?.classList.remove("active");
+    tag.classList.add("active");
 
-      const filter = tag.dataset.filter;
+    const filter = tag.dataset.filter;
 
-      skillIcons.forEach(icon => {
-        const category = icon.dataset.category;
-        if (filter === 'all' || category === filter) {
-          icon.style.display = 'inline-block';
-        } else {
-          icon.style.display = 'none';
-        }
-      });
+    skillIcons.forEach((icon) => {
+      const category = icon.dataset.category;
+      if (filter === "all" || category === filter) {
+        icon.style.display = "inline-block";
+      } else {
+        icon.style.display = "none";
+      }
     });
   });
+});
