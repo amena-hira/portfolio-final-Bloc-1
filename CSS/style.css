@@ -312,13 +312,7 @@ section.active {
 
 .service-card h3 {
   color: white;
-  margin: 0.5em 0;
-}
-
-.icon {
-  font-size: 2em;
-  color: #00bfff;
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em;
 }
 
 /* Scroll only contact */
