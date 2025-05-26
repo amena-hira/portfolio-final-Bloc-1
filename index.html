@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amena Akhter Hira</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/resume.css" />
+    <link rel="stylesheet" href="CSS/portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/39a6f1b45b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="my-page">
+      <!-- PRELOADER -->
+      <!-- <div id="preloader">
+    <img src="https://media.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif" alt="Loading...">
+  </div> -->
+
+      <!-- HAMBURGER -->
+      <button class="hamburger" onclick="toggleSidebar()" id="hamburgerBtn">
+        ☰
+      </button>
+
+      <!-- SIDEBAR -->
+      <div class="sidebar" id="sidebar">
+        <!-- NAVIGATION -->
+        <div class="nav-section">
+          <a class="item" href="#home" onclick="showSection('home')">
+            <i class="fa-solid fa-house"></i>
+            <span class="link-text">Home</span>
+          </a>
+          <a class="item" href="#about" onclick="showSection('about')">
+            <i class="fa-solid fa-user"></i>
+            <span class="link-text">About me</span>
+          </a>
+          <a class="item" onclick="showSection('resume')" href="#resume">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span class="link-text">Resume</span>
+          </a>
+
+          <a class="item" onclick="showSection('portfolio')" href="#portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+            <span class="link-text">Portfolio</span>
+          </a>
+          <a class="item" onclick="showSection('contact')" href="#contact">
+            <i class="fa-solid fa-address-card"></i>
+            <span class="link-text">Contact</span>
+          </a>
+        </div>
+        <!-- PROFILE -->
+        <div class="profile-section">
+          <div id="profile">
+            <div class="profile-photo">
+              <img src="../images/profile.webp" alt="profile" srcset="" />
+            </div>
+            <h2>Amena Akhter Hira</h2>
+            <p id="sub-title">Web Developper</p>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <button class="cv-button">Download CV</button>
+          </div>
+          <p id="copyright">© Amena Hira 2025 All rights reserved.</p>
+        </div>
+        <button class="cv-button footer">Download CV</button>
+
+        <p id="copyright" class="footer">
+          © Amena Hira 2025 All rights reserved.
+        </p>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <section id="home" class="active">
+          <div class="home-text">
+            <h1>Amena Akhter Hira</h1>
+            <div class="typewriter-wrapper">
+              <h3 id="typewriter">Web developper</h3>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <h2 class="about-title">About <span>Me</span></h2>
+
+          <div class="personal-objectif">
+            <p class="about-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries.
+            </p>
+
+            <div class="personal-info">
+              <div class="info-bar">
+                <p class="label-name">Address</p>
+                <p>Paris, IDF</p>
+              </div>
+              <div class="info-bar">
+                <p class="label-name">Email</p>
+                <p><strong>amenahira6@gmail.com</strong></p>
+              </div>
+              <div class="info-bar">
+                <p class="label-name">Telephone</p>
+                <p><strong>0762092501</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-block">
+            <h2 class="services-title">What <span>I Do</span></h2>
+            <div class="services-grid">
+              <div class="service-card">
+                <div class="icon">📁</div>
+                <h3>Web Design</h3>
+                <p>
+                  I am a skilled and creative web designer dedicated to visually
+                  stunning and user-friendly websites. With a passion for
+                  aesthetics and a deep understanding of user experience, I
+                  specialize in creating engaging online experiences that leave
+                  a lasting impression.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="icon">🖥️</div>
+                <h3>Web Design</h3>
+                <p>
+                  I am a skilled and creative web designer dedicated to visually
+                  stunning and user-friendly websites. With a passion for
+                  aesthetics and a deep understanding of user experience, I
+                  specialize in creating engaging online experiences that leave
+                  a lasting impression.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="icon">🎨</div>
+                <h3>Web Design</h3>
+                <p>
+                  I am a skilled and creative web designer dedicated to visually
+                  stunning and user-friendly websites. With a passion for
+                  aesthetics and a deep understanding of user experience, I
+                  specialize in creating engaging online experiences that leave
+                  a lasting impression.
+                </p>
+              </div>
+              <div class="service-card">
+                <div class="icon">🌐</div>
+                <h3>Web Design</h3>
+                <p>
+                  I am a skilled and creative web designer dedicated to visually
+                  stunning and user-friendly websites. With a passion for
+                  aesthetics and a deep understanding of user experience, I
+                  specialize in creating engaging online experiences that leave
+                  a lasting impression.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="resume">
+          <h2 class="section-title">My Resume</h2>
+          <div class="resume-container">
+            <!-- Experience -->
+            <div class="resume-column">
+              <h3 class="column-title">Experience</h3>
+
+              <div class="resume-item">
+                <span class="year">2017</span>
+                <h4>JS DEVELOPER</h4>
+                <h5>Banao Technologies, India</h5>
+                <ul>
+                  <li>Developed and maintained web applications.</li>
+                  <li>Integrated cloud services like AWS.</li>
+                  <li>Optimized code performance and UI/UX.</li>
+                  <li>Provided technical support and bug fixes.</li>
+                </ul>
+                <span class="year end">2021</span>
+              </div>
+
+              <div class="resume-item">
+                <span class="year">2017</span>
+                <h4>JS DEVELOPER</h4>
+                <h5>Banao Technologies, India</h5>
+                <ul>
+                  <li>Developed and maintained web applications.</li>
+                  <li>Integrated cloud services like AWS.</li>
+                  <li>Optimized code performance and UI/UX.</li>
+                  <li>Provided technical support and bug fixes.</li>
+                </ul>
+                <span class="year end">2021</span>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-column">
+              <h3 class="column-title">Education</h3>
+
+              <div class="resume-item">
+                <span class="year">2017</span>
+                <h4>JS DEVELOPER</h4>
+                <h5>Banao Technologies, India</h5>
+                <ul>
+                  <li>Developed and maintained web applications.</li>
+                  <li>Integrated cloud services like AWS.</li>
+                  <li>Optimized code performance and UI/UX.</li>
+                  <li>Provided technical support and bug fixes.</li>
+                </ul>
+                <span class="year end">2021</span>
+              </div>
+
+              <div class="resume-item">
+                <span class="year">2017</span>
+                <h4>JS DEVELOPER</h4>
+                <h5>Banao Technologies, India</h5>
+                <ul>
+                  <li>Developed and maintained web applications.</li>
+                  <li>Integrated cloud services like AWS.</li>
+                  <li>Optimized code performance and UI/UX.</li>
+                  <li>Provided technical support and bug fixes.</li>
+                </ul>
+                <span class="year end">2021</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills-section">
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-tags">
+              <span class="tag active" data-filter="all">All</span>
+              <span class="tag" data-filter="frontend">FrontEnd</span>
+              <span class="tag" data-filter="backend">BackEnd</span>
+              <span class="tag" data-filter="tools">Tools</span>
+            </div>
+
+            <div class="skills-icons">
+              <img
+                src="../images/html.webp"
+                alt="HTML"
+                data-category="frontend"
+              />
+              <img src="../images/css.png" alt="CSS" data-category="frontend" />
+              <img
+                src="../images/tailwind.png"
+                alt="Tailwind"
+                data-category="frontend"
+              />
+              <img
+                src="../images/firebase.webp"
+                alt="Firebase"
+                data-category="backend"
+              />
+              <img
+                src="../images/bootstrap.png"
+                alt="Bootstrap"
+                data-category="tools"
+              />
+              <img
+                src="../images/js p.png"
+                alt="JavaScript"
+                data-category="frontend"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio">
+          <h2 class="portfolio-title">Portfolio</h2>
+
+          <!-- Filter Buttons -->
+          <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+          </div>
+
+          <!-- Portfolio Grid -->
+          <div class="portfolio-grid">
+            <div class="portfolio-item frontend">
+              <div class="portfolio-overlay">
+                <span class="badge">Detailed</span>
+                <button class="menu-btn">≡</button>
+              </div>
+              <img
+                src="../images/pr1.webp"
+                title="Daily Life"
+                alt="Project 1"
+              />
+            </div>
+            <div class="portfolio-item frontend">
+              <div class="portfolio-overlay">
+                <span class="badge">Detailed</span>
+                <button class="menu-btn">≡</button>
+              </div>
+              <img
+                src="../images/pr2.webp"
+                title="Login Blog"
+                alt="Project 2"
+              />
+            </div>
+            <div class="portfolio-item backend">
+              <div class="portfolio-overlay">
+                <span class="badge">Detailed</span>
+                <button class="menu-btn">≡</button>
+              </div>
+              <img
+                src="../images/pr3.png"
+                title="Admin Panel"
+                alt="Project 3"
+              />
+            </div>
+            <!-- Add more items similarly -->
+          </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="portfolioModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle">Project Title</h2>
+            <div class="modal-body">
+              <img id="modalImage" src="" alt="Project Preview" />
+              <div class="modal-description">
+                <h4>Description</h4>
+                <p><strong>👤 Amena Hira</strong></p>
+                <p>
+                  🌐
+                  <a href="#" id="modalLink" target="_blank"
+                    >www.project1.com</a
+                  >
+                </p>
+                <p>
+                  Aliquam euismod aliquam massa, quis eleifend dui sodales
+                  vitae. Interdum et malesuada fames ac ante ipsum primis in
+                  faucibus.
+                </p>
+                <h4>Technology</h4>
+                <div class="tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JS</span>
+                  <span>DOM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="contact">
+          <h2 class="contact-title">Contact</h2>
+          <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <div class="info-box">
+                <div class="icon-box">📍</div>
+                <p>Paris, IDF</p>
+              </div>
+              <div class="info-box">
+                <div class="icon-box">📞</div>
+                <p>(+33) 7 62 09 25 01</p>
+              </div>
+              <div class="info-box">
+                <div class="icon-box">📱</div>
+                <p>(+33) 7 62 09 25 01</p>
+              </div>
+              <div class="info-box">
+                <div class="icon-box">✉️</div>
+                <p>amenahira6@gmail.com</p>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <h3><strong>How Can</strong> <span>I Help You?</span></h3>
+              <form class="form-layout">
+                <input type="text" placeholder="Full name" class="full-name" />
+                <input type="email" placeholder="Email address" class="email" />
+                <input type="text" placeholder="Subject" class="subject" />
+                <textarea placeholder="Message" class="message"></textarea>
+                <button type="submit" class="send-button">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="../JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+#resume {
+  background-color: #111;
+  color: #b5b6b7;
+  padding: 2em 0.5em 2em 2em;
+  overflow-y: auto;
+}
+
+.section-title {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+
+.resume-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  padding: 1em;
+}
+
+.column-title {
+  color: #00bfff;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #00bfff;
+  display: inline-block;
+  padding-bottom: 0.3em;
+}
+
+.resume-item {
+  position: relative;
+  background: #1a1a1a;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border-left: 2px solid #00bfff;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+.resume-item:hover {
+  transform: translateY(-4px);
+}
+
+.resume-item h4 {
+  color: white;
+  margin: 0.3em 0;
+}
+
+.resume-item h5 {
+  color: #00bfff;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+.resume-item ul {
+  padding-left: 1.2em;
+}
+
+.resume-item ul li {
+  margin-bottom: 0.3em;
+  font-size: 0.95em;
+}
+
+.year {
+  font-size: 0.9em;
+  color: #00bfff;
+  position: absolute;
+  left: -2.5em;
+  top: 1em;
+}
+
+.year.end {
+  top: auto;
+  bottom: 1em;
+}
+
+.skills-section {
+  margin-top: 3em;
+  text-align: center;
+}
+
+.skills-title {
+  color: white;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+.skills-tags {
+  margin-bottom: 1.5em;
+}
+
+.tag {
+  display: inline-block;
+  background: #00bfff;
+  color: #111;
+  padding: 0.5em 1.2em;
+  margin: 0 0.5em;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.skills-icons img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+  }
+
+  .year {
+    position: static;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .year.end {
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-tags .tag {
+    margin: 0.3em 0.4em;
+    font-size: 0.85em;
+    padding: 0.4em 1em;
+  }
+
+  .skills-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
